@@ -1,0 +1,326 @@
+:root{
+--basic-extrablack:#000000;
+--basic-black:#333333;
+--basic-brown:#766357;
+--basic-waith:#FFFFFF;
+--basic-blue:#81B3D2;
+--basic-pale-white:#EEEEEE;
+
+--special-dark-blue:#669EC0;
+--special-extra-dark-blue:#5496BD;
+--special-dark-brown:#604E43;
+--special-extra-dark-brown:#503E33;
+--special-pale:#766357;
+--special-pale:#F2F2F2;;
+--special-extra-pale-:#EBEBEB;;
+}
+
+/*main body*/
+
+body {
+     min-width: 1200px;
+     margin: 0;
+     padding: 0;
+     font-family: 'PT Sans', sans-serif;   
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: normal;
+     background-color: var(--basic-waith);
+     text-align: center;
+     color: var(--basic-black);
+}
+
+.page a {
+     text-decoration: none;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+/* main nav*/
+
+.main-nav {    
+font-size: 14px;
+line-height: 26px;
+color:var(--basic-extrablack);
+background-color: transparent;
+}
+
+/* site-nav*/
+
+.site-nav{
+list-style: none;
+text-transform: uppercase;
+font-size: 14px;
+line-height: 26px;
+}
+
+.site-nav a{
+color: var(--basic-extrablack);
+}
+
+.site-nav a:hover,
+.te-nav a:focus{
+color: var(--basic-blue);     
+}
+.site-nav a:active{
+color: rgba(0, 0, 0, 0.3);     
+}
+      
+  
+
+
+
+/*title-text*/
+.title-text{
+color: var(--basic-extrablack);
+text-transform: uppercase;     
+}
+
+.title-text >.title-text-item {
+     font-size: 21px;
+     line-height: 26px;
+}
+
+.title-text p {
+     font-size: 14px;
+     line-height: 26px;    
+}
+
+/*feature*/
+
+.feature{
+     background-color:var(--basic-blue);
+     text-transform: uppercase
+}
+
+.feature > .header, .feature > p {
+     color: var(--basic-waith);
+     line-height: 21px;
+}
+
+.feature > .header{
+     font-size: 21px;
+}
+
+.feature > p {
+     font-size: 14px;
+}
+
+ /*special-pluses*/
+
+.special-pluses >.special-pluses-list {
+list-style: none;
+text-transform: uppercase;
+}
+
+.special-pluses-item h3 {
+     font-size: 21px;
+     line-height: 21px;
+     color:var(--basic-extrablack);
+}
+.special-pluses-item p {
+     font-size: 14px;
+     line-height: 21px;
+     color:var(--basic-extrablack);     
+}
+
+/*addfeatur*/
+
+.addfeature {
+background-color:var(--basic-pale-white);
+text-transform: uppercase;     
+}
+
+.addfeature > .addheader, .addfeature > p {
+line-height: 21px;     
+}
+
+.addfeature > .addheader {
+font-size: 21px;     
+}
+
+.addfeature > p {
+font-size: 14px;    
+}
+
+/*sum-up */
+
+.sum-up {
+     font-size: 30px;
+     line-height: 24px;    
+}
+
+/* button */
+.main-button  {
+     font: inherit;
+     text-align: center;
+     color: var(--basic-waith);
+     vertical-align: middle;
+     text-transform: uppercase;
+     background-color: var(--basic-brown);
+     border: none;
+     font-size: 21px;
+     line-height: 26px;
+}
+
+.main-button:hover,
+.main-button:focus{
+  background-color: var(--special-dark-brown);
+}
+
+.main-button:active {
+      background-color: var(--special-extra-dark-brown);     
+      color: rgba(255, 255, 255, 0.3);                          
+}
+/* tel */
+
+
+.tel h2 {
+font-size: 21px;
+line-height: 26px;
+}
+
+.tel a {
+color: var(--basic-black);
+font-size: 21px;
+line-height: 26px;     
+}
+
+/*social*/
+
+.social li {
+list-style: none;   
+}
+
+.social a {
+background-color: var(--basic-blue);
+color: var(--basic-waith);
+}
+
+/* WEBSITE BY*/
+.web-by {
+font-size: 14px;
+line-height: 26px;     
+}
+.web-by a:hover,
+.web-by img:focus{
+color: var(--basic-blue);     
+}
+.web-by a>:active{
+color: rgba(0, 0, 0, 0.3);   
+}
+
+/*sorting*/
+
+.sorting h2 {
+font-size: 21px;
+line-height: 26px;
+}
+
+.sorting > p {
+font-size: 12px;
+line-height: 18px; 
+text-transform: uppercase;  
+}
+
+.sorting li {
+list-style: none;     
+}
+
+.sorting a {
+color: rgba(0, 0, 0, 0.3);
+border-bottom: 1px dashed var(--basic-blue);
+font-size: 12px;
+line-height: 18px;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+color: var(--basic-blue);     
+}
+.sorting a:active {
+color: var(--basic-extrablack);     
+}
+
+/*hodtels*/
+
+.hotels h3 {
+font-size: 21px;
+line-height: 26px;
+}
+
+.hotels p {
+font-size: 14px;
+line-height: 21px;     
+}
+
+.hotel-link{
+color: var(--basic-extrablack);    
+font-size: 21px;
+line-height: 26px;     
+}
+
+.hotel-link:hover,
+.hotel-link:focus {
+color: var(--basic-blue);     
+}
+.hotel-link:active{
+color: rgba(0, 0, 0, 0.3);     
+}
+
+
+/*bitton hostels*/
+
+.singup {
+     font: inherit;
+     text-align: center;
+     color: var(--basic-waith);
+     vertical-align: middle;
+     text-transform: uppercase;
+     background-color: var(--basic-blue);
+     border: none;
+     font-size: 14px;
+     line-height: 21px;
+
+    
+}
+.tobook {
+     font: inherit;
+     text-align: center;
+     color: var(--basic-waith);
+     vertical-align: middle;
+     text-transform: uppercase;
+     background-color: var(--basic-brown);
+     border: none;
+     font-size: 14px;
+     line-height: 21px;    
+}
+
+.singup:hover,
+.singup:focus{
+background-color:var(--special-dark-blue) ;     
+}
+.singup:active{
+background-color: var(--special-extra-dark-blue);
+color: rgba(255, 255, 255, 0.3);     
+}
+
+.tobook:hover,
+.tobook:focus{
+background-color: var(--special-dark-brown);    
+}
+.tobook:active{
+background-color: var(--special-extra-dark-brown);
+color: rgba(255, 255, 255, 0.3);     
+}
+
+
+
+
+
+
+
+   
