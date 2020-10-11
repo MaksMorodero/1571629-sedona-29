@@ -12,7 +12,7 @@
 --special-extra-dark-brown:#503E33;
 --special-pale:#766357;
 --special-pale:#F2F2F2;;
---special-extra-pale-:#EBEBEB;;
+--special-extra-pale:#EBEBEB;
 }
 
 /*main body*/
@@ -21,13 +21,14 @@ body {
      min-width: 1200px;
      margin: 0;
      padding: 0;
-     font-family: 'PT Sans', sans-serif;   
+     font-family: 'PT Sans', Arial, sans-serif;   
      font-size: 14px;
      line-height: 24px;
      font-weight: normal;
      background-color: var(--basic-waith);
      text-align: center;
      color: var(--basic-black);
+     
 }
 
 .page a {
@@ -53,6 +54,7 @@ background-color: transparent;
 .site-nav{
 list-style: none;
 text-transform: uppercase;
+font-weight: bold;
 font-size: 14px;
 line-height: 26px;
 }
@@ -72,7 +74,6 @@ color: rgba(0, 0, 0, 0.3);
   
 
 
-
 /*title-text*/
 .title-text{
 color: var(--basic-extrablack);
@@ -86,34 +87,35 @@ text-transform: uppercase;
 
 .title-text p {
      font-size: 14px;
-     line-height: 26px;    
+     line-height: 26px;
+     color: var(--basic-black);   
 }
 
 /*feature*/
 
-.feature{
+.feature {
      background-color:var(--basic-blue);
-     text-transform: uppercase
+     text-transform: uppercase;
+     color: var(--basic-waith);
+
 }
 
-.feature > .header, .feature > p {
-     color: var(--basic-waith);
+.feature h2 {
+     font-size: 21px;
      line-height: 21px;
 }
 
-.feature > .header{
-     font-size: 21px;
-}
-
-.feature > p {
+.feature p{
      font-size: 14px;
+     line-height: 21px;
 }
 
  /*special-pluses*/
 
-.special-pluses >.special-pluses-list {
+.special-pluses li {
 list-style: none;
 text-transform: uppercase;
+color: var(--basic-black);
 }
 
 .special-pluses-item h3 {
@@ -124,33 +126,46 @@ text-transform: uppercase;
 .special-pluses-item p {
      font-size: 14px;
      line-height: 21px;
-     color:var(--basic-extrablack);     
+     color:var(--basic-black);     
 }
 
 /*addfeatur*/
 
 .addfeature {
-background-color:var(--basic-pale-white);
-text-transform: uppercase;     
+     list-style: none;
+     text-transform: uppercase;     
 }
 
-.addfeature > .addheader, .addfeature > p {
-line-height: 21px;     
+.addfeature h2 {
+     font-size: 21px;
+     line-height: 21px;
+     color: var(--basic-extrablack);    
 }
 
-.addfeature > .addheader {
-font-size: 21px;     
-}
-
-.addfeature > p {
-font-size: 14px;    
+.addfeature p {
+     font-size: 14px;
+     line-height: 21px;
+     color: var(--basic-black);     
 }
 
 /*sum-up */
 
 .sum-up {
      font-size: 30px;
-     line-height: 24px;    
+     line-height: 24px;
+     color: var(--basic-extrablack);
+     text-transform: uppercase;       
+}
+
+.sum-up h2 {
+     font-size:  21px;
+     line-height: 24px;
+     font-weight: bold;  
+}
+
+.sum-up p {
+     font-size: 12px;
+     line-height: 24px;
 }
 
 /* button */
@@ -164,6 +179,7 @@ font-size: 14px;
      border: none;
      font-size: 21px;
      line-height: 26px;
+     font-weight: bold;
 }
 
 .main-button:hover,
@@ -181,10 +197,11 @@ font-size: 14px;
 .tel h2 {
 font-size: 21px;
 line-height: 26px;
+color: var(--basic-extrablack);
 }
 
 .tel a {
-color: var(--basic-black);
+color: var(--basic-extrablack);
 font-size: 21px;
 line-height: 26px;     
 }
@@ -203,7 +220,8 @@ color: var(--basic-waith);
 /* WEBSITE BY*/
 .web-by {
 font-size: 14px;
-line-height: 26px;     
+line-height: 26px; 
+color: var(--basic-extrablack);    
 }
 .web-by a:hover,
 .web-by img:focus{
@@ -215,9 +233,14 @@ color: rgba(0, 0, 0, 0.3);
 
 /*sorting*/
 
+.sorting{
+color: var(--basic-extrablack);     
+}
+
 .sorting h2 {
 font-size: 21px;
 line-height: 26px;
+text-transform: uppercase;  
 }
 
 .sorting > p {
@@ -250,11 +273,15 @@ color: var(--basic-extrablack);
 .hotels h3 {
 font-size: 21px;
 line-height: 26px;
+color: var(--basic-extrablack);
+text-transform: uppercase;
 }
 
 .hotels p {
 font-size: 14px;
-line-height: 21px;     
+line-height: 21px;
+color: var(--basic-black);
+text-transform: uppercase;     
 }
 
 .hotel-link{
@@ -316,6 +343,24 @@ background-color: var(--special-dark-brown);
 background-color: var(--special-extra-dark-brown);
 color: rgba(255, 255, 255, 0.3);     
 }
+
+/*картинка - заднего и переднего фона welcom*/
+
+.background-welcom{
+     background-image: url('../img/background\ photo.jpg');
+     background-position: left, top;
+     background-repeat: no-repeat;
+     width: 1200px ;
+     height: 509px ;
+     }
+
+.background-filter {
+ background-image: url(../img/background\ photo.jpg);
+ widows: 1200px; ;
+ height: 217px;    
+}
+
+
 
 
 
