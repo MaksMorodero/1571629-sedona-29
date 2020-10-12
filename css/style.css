@@ -11,7 +11,7 @@
 --special-dark-brown:#604E43;
 --special-extra-dark-brown:#503E33;
 --special-pale:#766357;
---special-pale:#F2F2F2;;
+--special-pale:#F2F2F2;
 --special-extra-pale:#EBEBEB;
 }
 
@@ -31,8 +31,21 @@ body {
      
 }
 
+/*page*/
+
+.page {
+height: 100%;     
+}
+
 .page a {
      text-decoration: none;
+}
+
+.page-body {
+min-height: 100%;
+display: grid;
+grid-template-rows:min-content 1fr min-content;
+align-content: start;   
 }
 
 img {
@@ -42,11 +55,28 @@ img {
 
 /* main nav*/
 
-.main-nav {    
+.main-header-bar {
+background-color: var(--basic-waith);    
+}
+
+.main-navigation-wrapper {
+display: grid;
+grid-template-columns: 1fr min-content;
+width: ;
+margin: 0 auto ;
+padding: 0 10px;    
+}
+
+.main-nav {
+display: grid;   
 font-size: 14px;
 line-height: 26px;
 color:var(--basic-extrablack);
 background-color: transparent;
+}
+
+.main-header-logo {
+justify-self:center;    
 }
 
 /* site-nav*/
@@ -243,7 +273,7 @@ line-height: 26px;
 text-transform: uppercase;  
 }
 
-.sorting > p {
+.sorting  p {
 font-size: 12px;
 line-height: 18px; 
 text-transform: uppercase;  
@@ -302,7 +332,7 @@ color: rgba(0, 0, 0, 0.3);
 /*bitton hostels*/
 
 .singup {
-     font: inherit;
+     
      text-align: center;
      color: var(--basic-waith);
      vertical-align: middle;
@@ -347,15 +377,16 @@ color: rgba(255, 255, 255, 0.3);
 /*картинка - заднего и переднего фона welcom*/
 
 .background-welcom{
-     background-image: url('../img/background\ photo.jpg');
+     background-image: url(../img/background.jpg);
      background-position: left, top;
-     background-repeat: no-repeat;
+     background-repeat: no-repeat;    
      width: 1200px ;
      height: 509px ;
      }
 
 .background-filter {
- background-image: url(../img/background\ photo.jpg);
+ background-image: url(../img/background.jpg);
+ background-repeat: no-repeat;
  widows: 1200px; ;
  height: 217px;    
 }
